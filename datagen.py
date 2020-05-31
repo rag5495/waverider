@@ -2,7 +2,7 @@
 #  Author: Ryan Godbey
 #  Description: Creates training and test data for the
 #               neural network.
-#  Updated: 05/27/20
+#  Updated: 05/31/20
 #  If directories for training and test data do not
 #  exist, they need to be made. Script may take up to\
 #  five minutes to complete
