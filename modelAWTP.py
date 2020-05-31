@@ -1,7 +1,6 @@
 #======================================================
 #  Author: Ryan Godbey
 #  Description: Design and training of neural network.
-#               ##Updated to include amplitude.
 #  Updated: 05/28/20
 #  Model saves in current directory
 #======================================================
