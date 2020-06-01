@@ -45,7 +45,13 @@ noise and uses the "noisy" data as the training dataset.
 
 In order to change the size of the samples generated, change the subsize as seen below:
 
-[link](https://github.com/rag5495/waverider/blob/c4f8c982084f02bc28445eb16ae58a81d06f0cd9/datagen.py#L17)
+`17 | subSize = 32`
+
+The mean and variance of the gaussian distribution that the noise is sampled from
+are designated by the variables mu and sigma respectively:
+
+`57 | mu = 0`
+`58 | sigma = 0.1`
 
 #### Splice.py
 Takes the input image and splits it into smaller arrays of shape (subSize, subSize)
