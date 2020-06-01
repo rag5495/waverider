@@ -45,7 +45,7 @@ noise and uses the "noisy" data as the training dataset.
 
 In order to change the size of the samples generated, change the subsize as seen below:
 
-https://github.com/rag5495/waverider/blob/c4f8c982084f02bc28445eb16ae58a81d06f0cd9/datagen.py#L17
+[link](https://github.com/rag5495/waverider/blob/c4f8c982084f02bc28445eb16ae58a81d06f0cd9/datagen.py#L17)
 
 #### Splice.py
 Takes the input image and splits it into smaller arrays of shape (subSize, subSize)
