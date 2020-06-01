@@ -33,4 +33,4 @@ Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
 
-`pip install tensorflow, numpy, matplotlib, datetime, pillow`
+`pip install tensorflow numpy matplotlib datetime pillow`
