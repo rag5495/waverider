@@ -78,3 +78,12 @@ and phase shift. Also outputs the tensorboard logs to the specified directory wi
 timestamp coding:
 
     61 | log_dir='Logs\\' + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+
+#### Prediction_mAWTP.py
+Runs the 2-d subsamples from the input image through the model.
+
+You can change the model being used for computation and print a summary of that
+model:
+
+    13 | model = load_model('.\\modelAWTP.h5')
+    14 | model.summary()
