@@ -12,7 +12,6 @@ with a scanning tunneling microscope (STM).
 
 
 ### Introduction
-
 When a surface is being examined by an STM, there are often a lot of external
 factors that can add noise to the image. There are also a lot of impurities in
 the data, such as structures that resemble radial gaussians or spherical caps.
@@ -30,10 +29,24 @@ Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
 
 
 ### Dependencies
-
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
 
 `pip install tensorflow numpy matplotlib datetime pillow`
 
 
 ### Description of Scripts
+
+#### Datagen.py
+Creates two lists of data to be used in the training and validation of the neural
+network. The script creates standing wave patterns in 2-d numpy arrays of shape
+(subSize, subSize) with varying wavelength, angle of rotation, and phase shift.
+Applies random sampling from a normal gaussian distribution to 20% of the list as
+noise and uses the "noisy" data as the training dataset.
+
+#### Splice.py
+Takes the input image and splits it into smaller arrays of shape (subSize, subSize)
+by sampling at each pixel, iterating by row and column. The output of this is the
+input array for the trained model, along with the list of mins and maxs of each
+individual 2-d array.
+
+#### ModelAWTP.py
