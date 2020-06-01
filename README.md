@@ -61,4 +61,14 @@ by sampling at each pixel, iterating by row and column. The output of this is th
 input array for the trained model, along with the list of mins and maxs of each
 individual 2-d array.
 
+The size of the sampling from the input image can be changed by altering the subSize:
+
+    13 | subSize = 32
+
+In order to change the input image, you can change between sample images
+'sample_clean.png' and 'sample_noise.jpg', or any other images with dimensions that
+are multiples of 'subSize':
+
+    30 | Data = np.array(Image.open(*'sample_clean.png'*).convert('L'), int)
+
 #### ModelAWTP.py
