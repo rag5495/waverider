@@ -31,7 +31,7 @@ Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
 ### Dependencies
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
 
-    pip install tensorflow numpy matplotlib datetime pillow
+    pip install tensorflow numpy matplotlib datetime pillow tensorboard
 
 
 ### Description of Scripts
@@ -69,6 +69,12 @@ In order to change the input image, you can change between sample images
 'sample_clean.png' and 'sample_noise.jpg', or any other images with dimensions that
 are multiples of 'subSize':
 
-    30 | Data = np.array(Image.open(*'sample_clean.png'*).convert('L'), int)
+    30 | Data = np.array(Image.open(<b>'sample_clean.png'</b>).convert('L'), int)
 
 #### ModelAWTP.py
+Uses the output of datagen.py as the training and validation data for the creation
+of a neural network that outputs three parameters: wavelength, angle of rotation,
+and phase shift. Also outputs the tensorboard logs to the specified directory with
+timestamp coding:
+
+    61 | log_dir='Logs\\' + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
