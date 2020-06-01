@@ -7,7 +7,7 @@ with a scanning tunneling microscope (STM).
 ## Table of Contents
 
 * [Introduction](https://github.com/rag5495/waverider#introduction)
-* [Dependencies]
+* [Dependencies](https://github.com/rag5495/waverider#dependencies)
 *
 
 ### Introduction
@@ -26,3 +26,15 @@ several bifurcations.
 ![alt-text-1](orig.png "Original Data") | ![alt-text-2](amp.png "Plot of Prediction")
 :--------------------------------------:|:------------------------------------------:
 Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
+
+### Dependencies
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
+
+'''bash
+pip install tensorflow
+pip install numpy
+pip install matplotlib
+pip install datetime
+pip install pillow
+'''
