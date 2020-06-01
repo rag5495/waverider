@@ -25,4 +25,4 @@ several bifurcations.
 
 ![alt-text-1](orig.png "Original Data") | ![alt-text-2](amp.png "Plot of Prediction")
 :--------------------------------------:|:------------------------------------------:
-:Original Data (Input to Model): | :Plot of Model Prediction (Output of Model):
+Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
