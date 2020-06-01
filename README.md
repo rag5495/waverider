@@ -31,7 +31,7 @@ Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
 ### Dependencies
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
 
-`pip install tensorflow numpy matplotlib datetime pillow`
+    pip install tensorflow numpy matplotlib datetime pillow
 
 
 ### Description of Scripts
@@ -45,13 +45,13 @@ noise and uses the "noisy" data as the training dataset.
 
 In order to change the size of the samples generated, change the subsize as seen below:
 
-`17 | subSize = 32`
+    17 | subSize = 32
 
 The mean and variance of the gaussian distribution that the noise is sampled from
 are designated by the variables mu and sigma respectively:
 
-`57 | mu = 0`
-`58 | sigma = 0.1`
+    57 | mu = 0
+    58 | sigma = 0.1
 
 #### Splice.py
 Takes the input image and splits it into smaller arrays of shape (subSize, subSize)
