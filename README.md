@@ -43,6 +43,10 @@ network. The script creates standing wave patterns in 2-d numpy arrays of shape
 Applies random sampling from a normal gaussian distribution to 20% of the list as
 noise and uses the "noisy" data as the training dataset.
 
+In order to change the size of the samples generated, change the subsize as seen below:
+
+https://github.com/rag5495/waverider/blob/c4f8c982084f02bc28445eb16ae58a81d06f0cd9/datagen.py#L17
+
 #### Splice.py
 Takes the input image and splits it into smaller arrays of shape (subSize, subSize)
 by sampling at each pixel, iterating by row and column. The output of this is the
