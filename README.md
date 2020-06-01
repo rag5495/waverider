@@ -53,6 +53,8 @@ are designated by the variables mu and sigma respectively:
     57 | mu = 0
     58 | sigma = 0.1
 
+All data is saved to the `.\\Training` directory.
+
 #### Splice.py
 Takes the input image and splits it into smaller arrays of shape (subSize, subSize)
 by sampling at each pixel, iterating by row and column. The output of this is the
