@@ -8,7 +8,7 @@ with a scanning tunneling microscope (STM).
 
 * [Introduction](https://github.com/rag5495/waverider#introduction)
 * [Dependencies](https://github.com/rag5495/waverider#dependencies)
-* [Description of Scripts]
+* [Description of Scripts](https://github.com/rag5495/waverider#description-of-scripts)
 
 
 ### Introduction
