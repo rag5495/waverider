@@ -6,15 +6,15 @@
 #=======================================================
 
 import numpy as np
-import os
+import os, math
 import matplotlib.pyplot as plt
 #from skimage.restoration import denoise_bilateral
 
 #Size of output "image" from model
-imSize = 481
 
 #Import predicted data and reshape for plotting
 arr = np.load(os.path.join('.\\model_Out.npy'))
+imSize = int(math.sqrt(arr.shape[0]))
 wave = np.array(arr[0]).reshape(imSize,imSize)
 theta = np.array(arr[1]).reshape(imSize,imSize)
 phi = np.array(arr[2]).reshape(imSize,imSize)

@@ -36,6 +36,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the fol
 
 ### Description of Scripts
 
+Scripts are to be run in the order they appear below.
+
 #### Datagen.py
 Creates two lists of data to be used in the training and validation of the neural
 network. The script creates standing wave patterns in 2-d numpy arrays of shape
@@ -80,10 +82,16 @@ timestamp coding:
     61 | log_dir='Logs\\' + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
 #### Prediction_mAWTP.py
-Runs the 2-d subsamples from the input image through the model.
+Runs the 2-d subsamples output from splice.py through the model.
 
 You can change the model being used for computation and print a summary of that
 model:
 
     13 | model = load_model('.\\modelAWTP.h5')
     14 | model.summary()
+
+#### Plotmaps.py
+Plots the output of the predictions of the model. The dimensions of the images
+are set by:
+
+    17 | imSize = int(math.sqrt(arr.shape[1]))
