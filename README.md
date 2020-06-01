@@ -8,7 +8,7 @@ with a scanning tunneling microscope (STM).
 
 * [Introduction](https://github.com/rag5495/waverider#introduction)
 * [Dependencies](https://github.com/rag5495/waverider#dependencies)
-*
+* [Description of Scripts]
 
 
 ### Introduction
@@ -34,3 +34,6 @@ Original Data (Input to Model) | Plot of Model Prediction (Output of Model)
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
 
 `pip install tensorflow numpy matplotlib datetime pillow`
+
+
+### Description of Scripts
