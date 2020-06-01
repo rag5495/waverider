@@ -23,4 +23,6 @@ rotation, wavelength, and amplitude. The model is able reproduce bifurcations
 and eliminate topological defects. Below is an example of a complex surface with
 several bifurcations.
 
-![alt-text-1](orig.png "Original Data")![alt-text-2](amp.png "Plot of Prediction")
+![alt-text-1](orig.png "Original Data") | ![alt-text-2](amp.png "Plot of Prediction")
+:--------------------------------------:|:------------------------------------------:
+:Original Data (Input to Model): | :Plot of Model Prediction (Output of Model):
